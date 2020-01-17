@@ -1212,13 +1212,13 @@ vr1=matmul(sf1,dee1)
 
 
 
-!前輪接線・法線方向単位ベクトル
+!whell normal. tangent unit vector
 it1=tr1/ltrl1
 jt1=matmul(kai,it1)
 
 
 
-!前輪法線方向単位ベクトルの時間微分(固定点)
+!unit vector time derivative
 alph1=(ide-tens(tr1,tr1)/dot_product(tr1,tr1))/ltrl1 
 djt1=matmul(kai,mmv(alph1,dsf1,dee1))
 
