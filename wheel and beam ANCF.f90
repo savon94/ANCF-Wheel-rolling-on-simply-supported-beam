@@ -205,8 +205,8 @@ real(8),parameter:: epsI=5.0d-11                        !-----Initial value cond
 real(8),parameter:: v0=4.0d0                            !-----initial speed[km/h]
 !wheel parameter
 integer,parameter:: nwh=1						        !-----amount of Wheels
-real(8),parameter:: ma=1.3461d0!1.3461d0 !5.45d0        !-----wheel mass
-real(8),parameter:: r0=0.043d0   !0.43d0	            !-----wheel diameter
+real(8),parameter:: ma=5!1.3461d0!1.3461d0 !5.45d0        !-----wheel mass
+real(8),parameter:: r0=0.1! 0.043d0   !0.43d0	            !-----wheel diameter
 real(8),parameter:: ja=ma*(r0**2)/2.0d0      !46.37d0   !-----Wheel moment of inertia
 
 
@@ -230,7 +230,7 @@ real(8),parameter:: kb=1.3d7  !1.3d7  !2.6d7                  !---Foundation con
 real(8),parameter:: cb=1.0d3!1.0d3                            !---Foundation spring　　　　　
 real(8),parameter:: ms=0.51d0                                  !---Sleeper mass
 
-real(8),parameter:: pitch=0.08d0             !0.581d0          !-----Sleeper interval
+real(8),parameter:: pitch=1!0.08d0             !0.581d0          !-----Sleeper interval
 
 integer,parameter:: nsl=4 !10 !8  !2                   !-----Amount of sleeper
 
@@ -238,7 +238,7 @@ real(8),parameter:: hra=17.0d-3 !0.2312d0               !-----Rail height
 real(8),parameter:: wra=6.5d-3  !3.0d-2				    !-----Rail width
 real(8),parameter:: ira=(wra*hra**3)/12.0d0	            !-----Rail moment of inertia
 real(8),parameter:: ara=hra*wra				            !-----Rail cross section
-integer,parameter:: ne=2 	  !7                        !-----Rail element（inside sleeper interval）
+integer,parameter:: ne=5 	  !7                        !-----Rail element（inside sleeper interval）
 real(8),parameter:: dl=pitch/real(ne)                   !-----1 element length
 integer,parameter:: nn=ne*(nsl-1)+1		                !-----Number of rail nodes
 integer,parameter:: nrc=(nn-1)/2+1		                !-----Rail center nodes
