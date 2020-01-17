@@ -223,7 +223,7 @@ real(8),parameter:: kc=2.27875d10 !2.6023d10  !2.2895d10  !2.3233d10  !-----cont
 real(8),parameter:: cc=0!1.08d4   !2guzai*rute.mkc'       !-----contact damper guzai 0.344
 
 
-!軌道パラメータ
+!Track parameter
 real(8),parameter:: ks=0.9d7  !0.9d7  !0.6d7  !1.0d7          !-----Sleeper spring constant
 real(8),parameter:: cs=1.0d2!1.0d2                            !-----Sleeper damping constant
 real(8),parameter:: kb=1.3d7  !1.3d7  !2.6d7                  !---Foundation constant
